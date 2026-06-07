@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class TaskSubmissionTest {
 
     @Test void testValidStudentId() {
-        assertFalse(new TaskSubmission("s123456","T1.1","report.pdf",1024)
+        assertTrue(new TaskSubmission("s123456","T1.1","report.pdf",1024)
             .isStudentIdValid());
     }
 
